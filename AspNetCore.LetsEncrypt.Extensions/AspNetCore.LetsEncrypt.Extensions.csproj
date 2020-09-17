@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageId>AspNetCore.LetsEncrypt.Extensions</PackageId>
+        <Title>Opens up the .well-known folder enabling auto renewal of Let's Encrypt certificates</Title>
+        <Description>Add 'app.UseWellKnownDir();' to your Startup.Configure() and let Let's Ecrypt do its magic.</Description>
+        <Authors>morpher</Authors>
+        <PackageReleaseNotes>The first release.</PackageReleaseNotes>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.0" />
+      <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="2.0.0" />
+    </ItemGroup>
+
+</Project>
